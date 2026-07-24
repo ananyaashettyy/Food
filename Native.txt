@@ -1,0 +1,860 @@
+Excellent. This content fits as an Advanced Azure AI Foundry Specialization Track that comes after Cloud Native AI Fundamentals and before Project Implementation.
+
+AZURE AI FOUNDRY
+Mastering Azure AI Foundry & Generative AI
+Fine-Tuning • Deployment • Monitoring • RAG Pipelines
+Comprehensive Trainer Guide (Theory + Hands-On Labs)
+
+Course Overview
+This advanced course focuses on enterprise Generative AI implementation using Azure AI Foundry.
+The course moves from:
+Plain Text1Foundation Models2      ↓3Fine-Tuning4      ↓5Deployment6      ↓7Monitoring8      ↓9RAG Pipelines10      ↓11Agentic AI ApplicationsShow more lines
+
+Learning Objectives
+After completing this course learners will be able to:
+✅ Fine-tune foundation models using custom enterprise datasets
+✅ Apply Responsible AI practices
+✅ Deploy GenAI models using real-time and batch endpoints
+✅ Integrate AI with Azure Data Lake, Cognitive Search, and Synapse
+✅ Monitor production AI systems
+✅ Build RAG architectures
+✅ Work with vector databases
+✅ Build Agentic AI solutions using LangChain and Azure AI SDKs
+
+Module 1
+Fine-Tuning Foundation Models & Responsible AI
+
+1.1 Foundation Models
+What is a Foundation Model?
+A large pre-trained AI model trained on:
+
+Books
+Code
+Websites
+Research papers
+Enterprise text
+
+Examples:
+
+GPT-4o
+GPT-4
+Phi-3
+Llama-3
+Mistral
+Cohere Command
+
+
+Why Foundation Models Matter
+They already possess:
+
+Language understanding
+Reasoning ability
+Summarization capability
+Translation capability
+Code generation capability
+
+But they lack organization-specific knowledge.
+
+The Fine-Tuning Gap
+Plain Text1Foundation Model2      +3Enterprise Data4      =5Domain Expert AIShow more lines
+Fine-tuning bridges the gap between:
+
+General knowledge
+Business-specific knowledge
+
+
+1.2 Why Fine-Tune?
+Prompt Engineering Only
+Advantages:
+
+Fast
+No training required
+Low setup effort
+
+Limitations:
+
+Long prompts
+Higher inference cost
+Inconsistent outputs
+Limited domain expertise
+
+
+Fine-Tuning Benefits
+Better Accuracy
+Learns:
+
+Domain terminology
+Internal processes
+Organizational tone
+
+
+Lower Cost
+Because prompts become shorter.
+
+Standardized Outputs
+Example:
+JSON1{2 "incident":"Database Failure",3 "severity":"High",4 "action":"Restart Service"5}Show more lines
+
+Proprietary Knowledge
+Internal procedures become part of model behavior.
+
+1.3 Fine-Tuning Methods
+
+Full Fine-Tuning
+Updates:
+Plain Text1All WeightsShow more lines
+Advantages:
+
+Highest customization
+
+Disadvantages:
+
+Expensive
+Large compute requirements
+
+
+Prompt Tuning
+Only prompt embeddings are trained.
+Advantages:
+
+Cheap
+Fast
+
+
+LoRA (Low Rank Adaptation)
+Most commonly used.
+Benefits:
+
+Lightweight
+Lower GPU usage
+Fast training
+
+Azure AI Foundry commonly uses LoRA-based tuning.
+
+QLoRA
+Quantized LoRA.
+Advantages:
+
+Very low memory usage
+Cost-efficient
+
+
+Instruction Fine-Tuning
+Train using:
+Plain Text1Instruction2ResponseShow more lines
+Example:
+JSON1{2 "instruction":"Generate patching plan",3 "response":"Apply security patch KB123"4}Show more lines
+
+1.4 Dataset Preparation
+
+Step 1: Data Collection
+Sources:
+
+Tickets
+Manuals
+SOPs
+Emails
+Knowledge Bases
+
+
+Step 2: Clean Data
+Remove:
+
+Duplicates
+PII
+HTML
+Invalid records
+
+
+Step 3: Create JSONL
+Example:
+JSON1{2 "messages":[3   {4     "role":"user",5     "content":"How do I reset AD password?"6   },7   {8     "role":"assistant",9     "content":"Open Active Directory Users and Computers..."10   }11 ]12}Show more lines
+
+Step 4: Dataset Split
+Plain Text1Train      80%2Validation 10%3Test       10%Show more lines
+
+Step 5: Human Validation
+Verify:
+
+Correct labels
+Consistency
+Quality
+
+
+1.5 Fine-Tuning Workflow in Azure AI Foundry
+Plain Text1Select Model2      ↓3Upload Dataset4      ↓5Configure LoRA6      ↓7Train8      ↓9Evaluate10      ↓11Register Model12      ↓13DeployShow more lines
+
+1.6 Responsible AI
+
+Fairness
+Avoid discrimination.
+
+Transparency
+Explain AI usage.
+
+Privacy
+Protect customer data.
+
+Reliability
+Consistent outputs.
+
+Accountability
+Audit all model decisions.
+
+Explainability
+Use:
+
+SHAP
+LIME
+Counterfactual Analysis
+
+
+Azure Responsible AI Dashboard
+Provides:
+
+Error analysis
+Bias detection
+Fairness metrics
+Model explanations
+
+
+Lab 1
+Fine-Tune a Foundation Model
+Activities
+
+Create Foundry Project
+Select Phi-3
+Upload JSONL Dataset
+Configure LoRA
+Launch Training
+Evaluate Result
+Deploy Model
+
+Duration:
+Plain Text160–90 MinutesShow more lines
+
+Module 2
+Deployment & Azure Integration
+
+2.1 Deployment Options
+
+Real-Time Endpoints
+Low latency responses.
+Use Cases:
+
+Chatbots
+Copilots
+Helpdesks
+
+
+Managed Online Endpoints
+Provides:
+
+Auto-scaling
+GPU allocation
+Production deployments
+
+
+Batch Inference
+Use for:
+
+Log analysis
+Bulk classification
+Embedding generation
+
+
+Edge Deployment
+Examples:
+
+ONNX Runtime
+Phi Models
+
+Used for:
+
+Offline environments
+Industrial systems
+
+
+Real-Time Architecture
+Plain Text1Application2      ↓3API Management4      ↓5Azure AI Foundry Endpoint6      ↓7Model8      ↓9ResponseShow more lines
+
+Best Practices
+Blue-Green Deployment
+Plain Text1Version A → 80%2Version B → 20%Show more lines
+Gradually shift traffic.
+
+Auto Scaling
+Scale based on:
+
+Requests
+Throughput
+GPU utilization
+
+
+Streaming Responses
+Tokens streamed immediately.
+Better user experience.
+
+2.2 Batch Inference
+
+Typical Use Cases
+
+Nightly processing
+Historical log analysis
+Embedding generation
+Large document summarization
+
+
+Workflow
+Plain Text1JSONL File2      ↓3Batch Endpoint4      ↓5Processing6      ↓7Results StoredShow more lines
+
+2.3 Azure Data Lake Integration
+Provides:
+
+Petabyte-scale storage
+Structured data
+Unstructured data
+
+Formats:
+
+CSV
+JSON
+Delta
+Parquet
+
+
+AI Use Cases
+
+Training datasets
+Knowledge repositories
+Batch inference outputs
+
+
+2.4 Azure AI Search (Cognitive Search)
+
+Capabilities
+Keyword Search
+Traditional search.
+Semantic Search
+Meaning-based search.
+Vector Search
+Embedding similarity search.
+Hybrid Search
+Combines:
+Plain Text1BM252+3Vector SearchShow more lines
+
+RAG Integration
+Plain Text1Question2     ↓3Search4     ↓5Relevant Documents6     ↓7Context8     ↓9LLMShow more lines
+
+2.5 Azure Synapse Analytics
+Provides:
+
+Data warehouse
+Spark Analytics
+SQL Analytics
+
+Used for:
+
+Feature Engineering
+Data Preparation
+AI Reporting
+
+
+Lab 2
+Deploy a GenAI Model
+Activities:
+
+Deploy Endpoint
+Configure AI Search
+Build Retrieval Pipeline
+Connect Data Lake
+Store Results
+
+Duration:
+Plain Text160–90 MinutesShow more lines
+
+Module 3
+Monitoring & Observability
+
+Why Monitor AI Systems?
+AI performance can degrade due to:
+
+Data drift
+Model drift
+Cost increase
+Hallucinations
+Safety issues
+
+
+Key KPIs
+
+Latency
+Target:
+Plain Text1P99 < 2 SecondsShow more lines
+
+Accuracy
+Measure:
+
+Answer correctness
+Groundedness
+
+
+Safety
+Monitor:
+
+Toxicity
+Harmful content
+PII exposure
+
+
+Cost Metrics
+Track:
+
+Token usage
+Throughput
+Cache effectiveness
+
+
+Logging
+Capture:
+Plain Text1User Requests2Model Responses3Errors4Safety EventsShow more lines
+
+Tracing
+End-to-end tracking.
+Plain Text1User2 ↓3Retriever4 ↓5Vector Search6 ↓7LLM8 ↓9ResponseShow more lines
+
+Azure Monitor
+Provides:
+
+Dashboards
+Alerts
+Workbooks
+Log Analytics
+
+
+OpenTelemetry
+Provides:
+
+Distributed tracing
+Performance diagnostics
+
+
+Prompt Flow Evaluation
+Measures:
+
+Groundedness
+Relevance
+Coherence
+Fluency
+
+
+Lab 3
+Monitoring Dashboard Setup
+Activities:
+
+Enable Diagnostics
+Configure Log Analytics
+Build KQL Queries
+Create Dashboards
+Configure Alerts
+
+Duration:
+Plain Text160–90 MinutesShow more lines
+
+Module 4
+RAG, Vector Databases & Agentic AI
+
+4.1 What is RAG?
+Retrieval-Augmented Generation combines:
+Plain Text1Retrieval2+3GenerationShow more lines
+
+Why RAG?
+Solves:
+
+Hallucinations
+Outdated knowledge
+Missing enterprise knowledge
+
+
+RAG Architecture
+Plain Text1User Query2      ↓3Embedding Model4      ↓5Vector Database6      ↓7Top-K Documents8      ↓9Context Injection10      ↓11LLM12      ↓13AnswerShow more lines
+
+RAG Design Decisions
+
+Chunking
+Typical:
+Plain Text1512 Tokens210% OverlapShow more lines
+
+Embeddings
+Examples:
+
+text-embedding-3-large
+E5 Large
+BGE Models
+
+
+Re-Ranking
+Improve retrieval quality.
+Examples:
+
+Semantic Ranker
+Cohere Rerank
+
+
+4.2 Vector Database Comparison
+
+Azure AI Search
+Best Azure-native choice.
+Advantages:
+
+Managed
+Hybrid search
+Security integrated
+
+
+Pinecone
+Advantages:
+
+Fully managed
+Multi-region
+Scalable
+
+
+FAISS
+Advantages:
+
+Open source
+Extremely fast
+
+Limitations:
+
+Manual management
+
+
+Weaviate & Qdrant
+Advantages:
+
+Open source
+High-speed retrieval
+Metadata support
+
+
+4.3 Agentic AI Frameworks
+
+LangChain
+Provides:
+
+Chains
+Agents
+Memory
+RAG orchestration
+
+
+Semantic Kernel
+Microsoft framework.
+Provides:
+
+Planning
+Plugins
+Memory
+
+
+Prompt Flow
+Provides:
+
+Workflow orchestration
+Visual pipelines
+Evaluation
+
+
+AutoGen
+Enables:
+
+Multi-agent systems
+Collaborative AI execution
+
+
+Azure AI Projects SDK
+Provides:
+
+Project management
+Evaluations
+Traces
+Dataset operations
+
+
+Lab 4
+Build a Complete RAG Pipeline
+Activities:
+Step 1
+Chunk enterprise PDFs
+
+Step 2
+Generate embeddings
+
+Step 3
+Create Azure AI Search index
+
+Step 4
+Build LangChain Retriever
+
+Step 5
+Connect Azure AI Foundry LLM
+
+Step 6
+Evaluate groundedness
+
+Step 7
+Deploy as REST API
+Architecture:
+Plain Text1PDF Documents2       ↓3Chunking4       ↓5Embeddings6       ↓7Azure AI Search8       ↓9LangChain Retriever10       ↓11Foundry LLM12       ↓13REST API14       ↓15Enterprise UsersShow more lines
+
+Final Capstone Project
+Automated IT Infrastructure Management Assistant
+Phase 1: Fine-Tuning
+Train a model on:
+
+SOP documents
+Ticket history
+Infrastructure manuals
+
+
+Phase 2: Deployment
+Deploy as:
+
+Real-Time Endpoint
+Batch Processing Service
+
+
+Phase 3: Monitoring
+Track:
+
+Accuracy
+Cost
+Safety
+Drift
+
+
+Phase 4: RAG & Agentic AI
+Integrate:
+
+Azure AI Search
+LangChain
+Semantic Kernel
+Azure AI SDKs
+
+
+Final Outcome
+An enterprise-grade AI assistant capable of:
+✅ Installation automation
+✅ Configuration recommendations
+✅ Root cause analysis
+✅ Incident troubleshooting
+✅ Knowledge retrieval
+✅ Predictive infrastructure insights
+✅ Automated operational workflows
+
+Recommended Course Duration
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ModuleTheoryLabsFine-Tuning & Responsible AI1 Day0.5 DayDeployment & Integration1 Day0.5 DayMonitoring & Observability0.5 Day0.5 DayRAG & Agentic AI1 Day0.5 DayCapstone Project1 Day1 Day
+Total Duration
+Theory: 4.5 Days
+Hands-On Labs: 3 Days
+Capstone: 2 Days
+Overall Program Duration: 8–10 Days (depending on lab depth and project complexity).
+Provide your feedback on BizChat
+
+
+
+
+Skip to main content
+logo
+AS
+Back
+Cloud Native Gen AI -Azure
+Progress
+
+0%
+Completion info
+
+Gained XP
+0 / 50
+Activities
+0 / 1
+Course info
+
+Practice lab
+0
+Video
+0
+Quiz
+0
+Others
+1
+Table of contents
+Description
+This course is part of learningpath : Automation and Analytics - v3
+
+Timeline view
+Introduction to Cloud Native Gen AI        
+
+Cloud-native principles for AI workloads
+Overview of Azure AI Foundry platform
+Key components: Model Catalog, Prompt Flow, Deployment Services
+Generative AI Concepts      
+
+Large Language Models (LLMs) basics
+Foundation models in Azure AI Foundry
+Use cases: text, vision, multimodal applications
+Prompt Engineering & Context Management     
+
+Prompt design strategies
+Context injection and chaining
+Hands-on: Build effective prompts in Foundry
+Model Customization & Fine-Tuning         
+
+Fine-tuning foundation models with custom datasets
+Responsible AI practices (bias, fairness, transparency)
+Hands-on: Fine-tune a model using Azure AI Foundry
+Deployment & Integration 
+
+Model deployment options (real-time endpoints, batch inference)
+Integration with Azure services (Data Lake, Cognitive Search, Synapse)
+Hands-on: Deploy a Gen AI model and connect to external data
+Observability & Monitoring             
+
+Model performance monitoring
+Logging and tracing in Azure AI Foundry
+Hands-on: Set up monitoring dashboards
+Advanced Topics      
+
+Retrieval Augmented Generation (RAG) pipelines
+Vector DB integration (Azure Cognitive Search, FAISS, Pinecone)
+Agentic AI frameworks (LangChain, Azure AI SDKs)
+Hands-on: Build a RAG pipeline with Foundry
+Total: days (theory + labs)
+ 
+
+
+Hands On
+
+BU Driven Handson
+0/50 XP
+
+Kudos!
+You have earned some XP points.
+Powered by Tekstac
+
+
+
+Skip to main content
+logo
+AS
+Back
+Cloud Native Gen AI - Google
+Progress
+
+0%
+Completion info
+
+Gained XP
+0 / 50
+Activities
+0 / 1
+Course info
+
+Practice lab
+0
+Video
+0
+Quiz
+0
+Others
+1
+Table of contents
+Description
+This course is part of learningpath : Automation and Analytics - v3
+
+Timeline view
+Introduction to Vertex AI    
+
+Overview of Google Cloud AI ecosystem
+Vertex AI architecture & components
+Foundation models available in Vertex AI
+Hands-on: Explore Vertex AI Studio
+Generative AI Concepts      
+
+Large Language Models (LLMs) basics
+Pre-trained vs. fine-tuned models
+Multimodal applications (text, image, video)
+Hands-on: Use Gemini models in Vertex AI
+Prompt Engineering & Context Management     
+
+Prompt design strategies
+Context injection & chaining
+Hands-on: Build effective prompts in Vertex AI Studio
+Model Customization & Fine-Tuning         
+
+Fine-tuning foundation models with custom datasets
+Responsible AI practices (bias, fairness, transparency)
+Hands-on: Fine-tune a model using Vertex AI
+Deployment & Integration 
+
+Model deployment options (real-time endpoints, batch inference)
+Integration with GCP services (BigQuery, Dataflow, Cloud Storage)
+Hands-on: Deploy a Gen AI model and connect to external data sources
+Observability & Monitoring             
+
+Model performance monitoring
+Logging & tracing in Vertex AI
+Hands-on: Set up monitoring dashboards
+Advanced Topics      
+
+Retrieval Augmented Generation (RAG) pipelines
+Vector DB integration (FAISS, Pinecone, Weaviate)
+Agentic AI frameworks (LangChain, Google AI SDKs)
+Hands-on: Build a RAG pipeline with Vertex AI
+Total: days (theory + labs)
+
+Hands On
+
+BU Driven Handson
+0/50 XP
+
+Kudos!
+You have earned some XP points.
+Powered by Tekstac
