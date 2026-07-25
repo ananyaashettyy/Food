@@ -1,0 +1,943 @@
+Copilot said: IT Service Management (ITSM) Processes – Proper Flow Notes
+
+Module 1: Introduction to IT Service Management (ITSM)
+1. What is IT Service Management (ITSM)?
+Definition
+IT Service Management (ITSM) is the practice of designing, delivering, managing, and improving IT services to meet business needs.
+Purpose
+
+Align IT with business objectives.
+Deliver value to customers.
+Improve service quality.
+Ensure efficient use of IT resources.
+
+ITSM Focus Areas
+Plain Text1Business Needs2       ↓3   IT Services4       ↓5 Service Delivery6       ↓7User Satisfaction8       ↓9Continuous ImprovementShow more lines
+Examples
+
+Email services
+Network services
+Cloud services
+Software support services
+
+
+2. What is the ITIL Framework?
+Definition
+ITIL (Information Technology Infrastructure Library) is the most widely used framework for implementing ITSM best practices.
+Objectives
+
+Standardize IT processes.
+Improve service quality.
+Reduce operational risks.
+Enhance customer satisfaction.
+
+Benefits
+✔ Consistent service delivery
+✔ Better governance
+✔ Reduced downtime
+✔ Improved business alignment
+✔ Continual improvement
+
+3. ITIL Service Lifecycle
+The ITIL lifecycle consists of five major stages.
+Plain Text1Service Strategy2        ↓3Service Design4        ↓5Service Transition6        ↓7Service Operation8        ↓9Continual Service ImprovementShow more lines
+
+Stage 1: Service Strategy
+Purpose
+Decides what services should be offered and how they will create business value.
+Key Activities
+
+Demand Management
+Financial Management
+Service Portfolio Management
+
+Output
+Business-aligned IT services.
+
+Stage 2: Service Design
+Purpose
+Designs new services or modifies existing services.
+Key Activities
+
+SLA Design
+Capacity Planning
+Security Planning
+Availability Management
+
+Output
+Reliable service design.
+
+Stage 3: Service Transition
+Purpose
+Moves services from development into production.
+Key Activities
+
+Change Management
+Release Management
+Deployment Management
+Knowledge Management
+
+Output
+Smooth implementation.
+
+Stage 4: Service Operation
+Purpose
+Manages daily IT service delivery.
+Processes
+
+Incident Management
+Problem Management
+Request Fulfillment
+Event Management
+
+Output
+Stable day-to-day operations.
+
+Stage 5: Continual Service Improvement (CSI)
+Purpose
+Improves services continuously.
+Activities
+
+KPI measurement
+SLA review
+Performance analysis
+Process optimization
+
+Output
+Better quality and customer satisfaction.
+
+4. Importance of ITSM in Modern Enterprises
+Why ITSM is Important
+Business Alignment
+IT supports business goals.
+Faster Issue Resolution
+Structured support processes.
+Reduced Downtime
+Incidents are handled efficiently.
+Customer Satisfaction
+Improved service quality.
+Cost Optimization
+Efficient use of resources.
+Compliance
+Supports industry regulations.
+Overall Flow
+Plain Text1Business Goals2       ↓3ITSM Framework4       ↓5Efficient Processes6       ↓7Quality Service8       ↓9Customer SatisfactionShow more lines
+
+Module 2: Core ITSM Processes
+Overview
+The Core ITSM processes are:
+Plain Text1Incident Management2        ↓3Problem Management4        ↓5Change Management6        ↓7Release & Deployment Management8        ↓9Service Request ManagementShow more lines
+
+5. Incident Management
+Definition
+Incident Management restores normal service operation as quickly as possible after a service disruption.
+Examples
+
+Server down
+Email not working
+VPN failure
+Application crash
+
+
+Goal of Incident Management
+Primary Goal
+Plain Text1Restore Service Quickly2        ↓3Minimize Business ImpactShow more lines
+
+Incident Management Workflow
+Plain Text1Incident Reported2        ↓3Ticket Logged4        ↓5Categorized6        ↓7Prioritized8        ↓9Assigned10        ↓11Diagnosis12        ↓13Resolution14        ↓15User Confirmation16        ↓17Ticket ClosureShow more lines
+Benefits
+
+Faster recovery
+Reduced downtime
+Improved productivity
+
+
+6. Problem Management
+Definition
+Problem Management identifies and removes root causes of incidents.
+Key Question
+Incident Management asks:
+Plain Text1How can we restore service?Show more lines
+Problem Management asks:
+Plain Text1Why did the issue occur?Show more lines
+
+Problem Management Workflow
+Plain Text1Multiple Incidents Occur2            ↓3Problem Identified4            ↓5Root Cause Analysis (RCA)6            ↓7Known Error Documented8            ↓9Permanent Fix Implemented10            ↓11Problem ClosedShow more lines
+Example
+Plain Text1Frequent Server Crashes2         ↓3Memory Leak Identified4         ↓5Software Update Applied6         ↓7Issue PreventedShow more lines
+
+7. Change Management
+Definition
+Controls and manages changes to IT infrastructure in a structured manner.
+Goal
+Plain Text1Implement Changes2        ↓3Minimize Risks4        ↓5Avoid Service DisruptionsShow more lines
+
+Types of Changes
+Standard Change
+Low-risk and pre-approved.
+Example:
+
+Password reset
+
+
+Normal Change
+Requires review and CAB approval.
+Example:
+
+Application upgrade
+
+
+Emergency Change
+Urgent change needed immediately.
+Example:
+
+Critical security patch
+
+
+Change Management Workflow
+Plain Text1Change Request Raised2            ↓3Impact Assessment4            ↓5Risk Analysis6            ↓7Approval8            ↓9Implementation10            ↓11Testing12            ↓13Review14            ↓15ClosureShow more lines
+
+8. Release & Deployment Management
+Definition
+Ensures new software versions and updates are successfully deployed into production.
+Objectives
+
+Deliver quality releases
+Reduce deployment failures
+Maintain service continuity
+
+
+Release Process Flow
+Plain Text1Release Planning2         ↓3Build Creation4         ↓5Testing6         ↓7Approval8         ↓9Deployment10         ↓11Verification12         ↓13Release ClosureShow more lines
+Example
+Plain Text1New Banking Application Version2            ↓3Testing4            ↓5Deployment6            ↓7Production ReleaseShow more lines
+
+9. Service Request Management
+Definition
+Handles standard user requests that are not incidents.
+Examples
+
+Password reset
+Software installation
+New laptop request
+Access request
+
+
+Service Request Workflow
+Plain Text1User Request Submitted2          ↓3Request Logged4          ↓5Approval (if required)6          ↓7Fulfillment8          ↓9Verification10          ↓11ClosureShow more lines
+Benefits
+
+Improved user satisfaction
+Faster service delivery
+Reduced manual effort
+
+
+Module 3: Service Catalog & SLA Management
+10. Service Offerings
+Definition
+Services made available to users through a Service Catalog.
+Examples
+Business Services
+
+Email
+CRM
+ERP
+
+Technical Services
+
+Database Hosting
+Network Support
+Cloud Infrastructure
+
+
+Service Catalog Structure
+Plain Text1Service Catalog2      ↓3Service Name4      ↓5Description6      ↓7Cost8      ↓9SLA10      ↓11Support ContactShow more lines
+
+11. SLA (Service Level Agreement)
+Definition
+A formal agreement between the service provider and customer.
+Defines
+
+Availability targets
+Response times
+Resolution times
+
+Example
+Plain Text1System Availability = 99.9%2 3Critical Incident Response = 15 Minutes4 5Resolution Time = 4 HoursShow more lines
+
+12. OLA (Operational Level Agreement)
+Definition
+Internal agreement among support teams.
+Purpose
+Ensure SLA commitments are achieved.
+Flow
+Plain Text1Customer SLA2       ↓3Internal OLA Responsibilities4       ↓5Achieve SLA TargetsShow more lines
+Example
+Plain Text1SLA = Resolve in 4 Hours2 3Network Team = 2 Hours4 5Server Team = 1 Hour6 7Application Team = 1 HourShow more lines
+
+13. Service Portfolio Management
+Definition
+Manages all IT services throughout their lifecycle.
+
+Components
+Service Pipeline
+Future services.
+Service Catalog
+Current active services.
+Retired Services
+Discontinued services.
+
+Portfolio Flow
+Plain Text1Service Idea2       ↓3Service Pipeline4       ↓5Service Catalog6       ↓7RetirementShow more lines
+
+Module 4: Workflow Automation
+14. Ticket Lifecycle Management
+Definition
+Manages tickets from creation to closure.
+
+Complete Ticket Lifecycle
+Plain Text1Ticket Created2       ↓3Ticket Logged4       ↓5Categorized6       ↓7Prioritized8       ↓9Assigned10       ↓11Investigated12       ↓13Resolved14       ↓15Validated16       ↓17ClosedShow more lines
+
+15. Types of Escalation
+Functional Escalation
+Plain Text1L1 Support2     ↓3L2 Support4     ↓5L3 SupportShow more lines
+Used when technical expertise is required.
+
+Hierarchical Escalation
+Plain Text1Support Engineer2        ↓3Team Lead4        ↓5Manager6        ↓7DirectorShow more lines
+Used for urgent business impact.
+
+Automatic Escalation
+Triggered by ITSM tools when SLA is at risk.
+Plain Text1Ticket Near SLA Breach2            ↓3Automatic Escalation4            ↓5Immediate AttentionShow more lines
+
+16. Automation in ITSM Tools
+Definition
+Using technology to automate repetitive service management tasks.
+Automation Examples
+
+Auto ticket creation
+Auto assignment
+Email notifications
+SLA monitoring
+Self-service portals
+
+
+Automation Workflow
+Plain Text1Issue Detected2       ↓3Ticket Created Automatically4       ↓5Auto Assignment6       ↓7Notification Sent8       ↓9Resolution10       ↓11ClosureShow more lines
+
+Popular ITSM Tools
+ServiceNow
+Industry-leading ITSM platform.
+Jira Service Management
+Agile-focused service management.
+BMC Remedy
+Enterprise IT service platform.
+ManageEngine ServiceDesk Plus
+Integrated helpdesk solution.
+
+Module 5: ITSM Tools & Monitoring Integration
+17. Benefits of Integrating ITSM with Monitoring Tools
+Monitoring Tools
+
+Splunk
+Datadog
+Dynatrace
+AppDynamics
+Nagios
+Prometheus
+
+
+Integration Workflow
+Plain Text1Server Issue Occurs2          ↓3Monitoring Tool Detects Issue4          ↓5Alert Generated6          ↓7ITSM Ticket Created8          ↓9Auto Assignment10          ↓11Investigation12          ↓13Resolution14          ↓15Ticket ClosedShow more lines
+
+Benefits
+Proactive Detection
+Problems identified before users report them.
+Automatic Incident Creation
+Reduces manual effort.
+Faster Resolution
+Immediate alerting and response.
+Reduced Downtime
+Issues fixed quickly.
+Better Root Cause Analysis
+Monitoring data helps troubleshooting.
+Operational Efficiency
+Improved productivity of support teams.
+
+One-Page Exam Revision Flow
+Plain Text1ITSM2 ↓3ITIL Framework4 ↓5Service Lifecycle6 ↓7Strategy8 ↓9Design10 ↓11Transition12 ↓13Operation14 ↓15Continual Improvement16 17Core Processes18 ↓19Incident Management → Restore Service20 ↓21Problem Management → Find Root Cause22 ↓23Change Management → Control Change24 ↓25Release Management → Deploy Updates26 ↓27Service Request Management → Fulfill Requests28 29Service Management30 ↓31Service Catalog32 ↓33SLA34 ↓35OLA36 ↓37Service Portfolio38 39Workflow Management40 ↓41Ticket Lifecycle42 ↓43Escalations44 ↓45Automation46 47ITSM Tools48 ↓49ServiceNow / Jira / BMC Remedy50 ↓51Monitoring Integration52 ↓53Proactive Support & Faster ResolutionShow more lines
+These flow-style notes are ideal for assessment preparation, interviews, and Tekstac learning-path completion.
+Provide your feedback on BizChatYou said: I T SERVICE MANAGEMENT ITSM & the ITIL Framework From Foundations to Hands-On Incident & Change Simulations Vaayu Infra Solutions | Training Program | 30 Modules COURSE ROADMAP What We'll Cover Today Part 1 — Foundations 1 What is ITSM? 2 ITIL Framework Overview 3 Importance of ITSM Today 4 The Service Lifecycle Part 2 —Core Practices 1 Incident Management 2 Problem Management 3 Change Management 4 Release & Deployment 5 Service Request Mgmt Part 3 — Hands-On 1 Simulate an Incident 2 Simulate a Change 3 Key Takeaways & Q&A ITSM & ITIL Foundation Training 2 MODULE 1 · FOUNDATIONS What is IT Service Management? “ ITSM is the set of activities an organization performs to design, build, deliver, support, and continually improve the IT services it offers to customers — ensuring IT is managed as a coordinated set of services, not just a collection of technology. Axelos / ITIL working definition 1 Service, not silos IT is organized around end-to-end services consumed by the business, not isolated technical components. 2 Value-driven Every activity should trace back to value created for the customer or user. 3 Process + People + Tech ITSM combines defined processes, skilled people, and enabling technology/tools. 3 ITSM & ITIL Foundation Training MODULE 1 · FOUNDATIONS Key ITSM Concepts You Must Know 1 Service A means of enabling value co-creation by facilitating outcomes customers want, without owning specific costs/risks. 4 Value Co-Creation Value isn't delivered TO the customer — it's created WITH them through collaboration. 2 Customer vs. User Customer defines requirements & pays; the User is who actually uses the service day to day. 5 Outcomes over Outputs Success = the business result achieved, not just the technical deliverable produced. 3 Service Provider The organization (internal IT dept. or external vendor) delivering the service. 6 Utility & Warranty Utility = fit for purpose (what it does). Warranty = fit for use (availability, capacity, security). ITSM & ITIL Foundation Training 4 MODULE 2 · ITIL FRAMEWORK ITIL: History & Evolution ITIL (Information Technology Infrastructure Library) is the world's most widely adopted best-practice framework for ITSM — a set of guidance, not a rigid standard, originally developed by the UK government's CCTA and now owned by PeopleCert (formerly AXELOS). ITIL v1 1989 Original library — over 30 books covering IT operations best practice. ITSM & ITIL Foundation Training ITIL v2 2001 → Consolidated into 8 core books; introduced Service Support & Service Delivery. ITIL v3 / 2011 2007 → Introduced the Service Lifecycle (Strategy, Design, Transition, Operation, CSI). ITIL 4 2019 → Introduced the Service Value System, 34 Practices & 7 Guiding Principles for agile/DevOps era. 5 MODULE 2 · ITIL FRAMEWORK ITIL 4 —The 7 Guiding Principles Universal recommendations that guide an organization's decisions and actions, applicable to any initiative and at all levels. 1 Focus on value 5 Think and work holistically 2 Start where you are 6 Keep it simple and practical 3 Progress iteratively with feedback 7 Optimize and automate 4 Collaborate and promote visibility ITSM & ITIL Foundation Training 6 MODULE 2 · ITIL FRAMEWORK The ITIL 4 Service Value System (SVS) Describes how all components and activities of an organization work together to enable value creation through IT-enabled services. 1 Guiding Principles The 7 recommendations that inform decisions 2 Governance Direction, evaluation & monitoring by the organization 3 Service Value Chain The 6 core activities that convert demand into value 4 Practices 34 sets of resources for performing work (incl. Incident, Change, Problem) 5 Continual Improvement The model that embeds improvement at every level ITSM & ITIL Foundation Training 7 MODULE 2 · ITIL FRAMEWORK Service Value Chain —6 Core Activities A flexible operating model describing how activities combine to convert demand into value — activities can run in any order, feeding one another. Plan → Improve → Engage → Design & Transition → Obtain / Build Plus: Governance and the Guiding Principles surround every activity, with demand entering as “opportunity/demand” and exiting as “value”. ITSM & ITIL Foundation Training → Deliver & Support 8 MODULE 3 · WHY IT MATTERS Why ITSM Matters in Modern Enterprises 1 Digital dependency Business operations run on IT — an outage now halts revenue, not just email. 2 Customer experience Employees & customers expect consumer-grade reliability from internal IT services. 3 Risk & compliance Regulated industries need auditable, controlled processes for change and access. 4 Cost control Structured ITSM reduces wasted effort, duplicate tooling, and unplanned outage costs. ITSM & ITIL Foundation Training 9 MODULE 3 · WHY IT MATTERS Measurable Business Benefits of ITSM 30-50% Reduction in repeat incidents with mature Problem Management < 1 hr Typical MTTR target for critical incidents in well run Service Desks Improved service quality, reliability & availability across the estate 70%+ Of failed changes trace back to skipping formal Change Management Faster incident resolution — less downtime cost, higher productivity Better utilization of IT staff and infrastructure through standard processes Data-driven decisions from consistent logging, reporting & KPIs Stronger regulatory & audit compliance (SOX, ISO 27001, HIPAA, etc.) Higher customer and employee satisfaction (CSAT / employee NPS) ITSM & ITIL Foundation Training 10 MODULE 4 · SERVICE LIFECYCLE The IT Service Lifecycle — 5 Stages The classic ITIL model showing how a service is conceived, built, deployed, run, and continuously improved. Service Strategy → Service Design → Service Transition → Service Operation → Continual Service Improvement Continual Service Improvement wraps around every stage — it never “ends”, it loops back into Strategy, Design, Transition & Operation. 11 ITSM & ITIL Foundation Training MODULE 4 · SERVICE LIFECYCLE Stage 1: Service Strategy PURPOSE Defines the perspective, position, plans and patterns a service provider needs to execute to meet business outcomes. Answers: “what services should we offer, to whom, and how do we create value?” KEY PROCESSES / ACTIVITIES 1 Strategy Management for IT Services 2 Service Portfolio Management 3 Financial Management for IT Services 4 Demand Management 5 Business Relationship Management 12 ITSM & ITIL Foundation Training MODULE 4 · SERVICE LIFECYCLE Stage 2: Service Design PURPOSE Designs new or changed services for introduction into the live environment, covering the '5 aspects of design': solutions, management systems, architectures, processes, and measurement methods. KEY PROCESSES / ACTIVITIES 1 Service Level Management (SLM) 2 Capacity Management 3 Availability Management 4 IT Service Continuity Management 5 Information Security Management 6 Supplier Management 13 ITSM & ITIL Foundation Training MODULE 4 · SERVICE LIFECYCLE Stage 3: Service Transition PURPOSE Builds, tests and deploys new or changed services into production, ensuring risks are managed and the service performs as designed — this is where Change & Release Management live. KEY PROCESSES / ACTIVITIES 1 Change Management 2 Change Evaluation 3 Release & Deployment Management 4 Service Validation & Testing 5 Knowledge Management 6 Service Asset & Configuration Management 14 ITSM & ITIL Foundation Training MODULE 4 · SERVICE LIFECYCLE Stage 4: Service Operation PURPOSE Delivers and manages IT services at agreed levels on a day-to-day basis, coordinating activities and processes to maintain business-as-usual and handle failures. KEY PROCESSES / ACTIVITIES 1 Event Management 2 Incident Management 3 Problem Management 4 Request Fulfilment 5 Access Management Functions: Service Desk • Technical Mgmt • IT Operations Mgmt • Application Mgmt 15 ITSM & ITIL Foundation Training MODULE 4 · SERVICE LIFECYCLE Stage 5: Continual Service Improvement Aligns and re-aligns IT services to changing business needs by identifying and implementing improvements — CSI never stops; it wraps around all other stages. PLAN Deming Cycle — the engine behind every CSI activity ITSM & ITIL Foundation Training 7-Step Improvement Process (summary) → DO → CHECK → ACT 1. Identify the strategy for improvement 2. Define what you will measure 3. Gather the data 4. Process the data 5. Analyze the data & information 6. Present and use the information 7. Implement improvement 16 MODULE 5 · INCIDENT MANAGEMENT Incident Management: Restore Service Fast DEFINITION An unplanned interruption to an IT service, or a reduction in the quality of a service, that affects the customer or business. Severity / Priority Matrix P1 –Critical Major outage, no workaround, wide impact P2 –High Significant degradation, limited workaround OBJECTIVE Restore normal service operation as quickly as possible, minimizing adverse impact on business operations — the priority is speed, not perfection. P3 –Medium Moderate impact, workaround available P4 –Low Minor issue, minimal business impact 17 ITSM & ITIL Foundation Training MODULE 5 · INCIDENT MANAGEMENT Incident Management Process Flow The standard path every incident travels from detection to closure 1 Identify & Log 2 → Categorize 3 → Prioritize 4 → Diagnose → 5 Escalate (if needed) 6 → Resolve 7 → Close 18 ITSM & ITIL Foundation Training MODULE 5 · INCIDENT MANAGEMENT Roles, KPIs & Tools KEY ROLES Service Desk Agent – first point of contact, logs & attempts first-line fix Incident Manager – owns the process, drives major incidents L2 / L3 Support – specialist technical resolver teams COMMON TOOLS ServiceNow • Jira Service Management • BMC Remedy • Freshservice • Zendesk KEY PERFORMANCE INDICATORS MTTR Mean Time to Restore service SLA % Incidents resolved within agreed SLA FCR % First-Call / First-Contact Resolution rate Reopen % Incidents reopened after closure 19 ITSM & ITIL Foundation Training MODULE 6 · PROBLEM MANAGEMENT Problem Management: Root Cause & Prevention DEFINITION A Problem is the underlying cause of one or more Incidents. Problem Management manages the lifecycle of all Problems from identification through investigation to resolution. OBJECTIVE Prevent incidents from happening, and minimize the impact of incidents that cannot be prevented, by finding and eliminating root causes. Incident vs. Problem — don't confuse them INCIDENT Restore service now Reactive, urgent Symptom-focused Owned by Service Desk / L2-L3 PROBLEM Find & remove root cause Analytical, methodical Cause-focused Owned by Problem Manager Ends at resolution Ends when root cause eliminated 20 ITSM & ITIL Foundation Training MODULE 6 · PROBLEM MANAGEMENT Root Cause Analysis Techniques 1 5 Whys the first symptom. Ask “why” repeatedly (typically 5x) until the true root cause surfaces, not just 2 Fishbone / Ishikawa Diagram Visually maps potential causes across categories (People, Process, Technology, Environment) into one effect. 3 Pareto Analysis (80/20) Identifies the small number of causes responsible for the majority of incidents, to prioritize effort. 4 Kepner-Tregoe Method Structured IS / IS-NOT comparison to systematically isolate what changed and where. 21 ITSM & ITIL Foundation Training MODULE 6 · PROBLEM MANAGEMENT Problem Management Process Flow Reactive (from incidents) or Proactive (from trend analysis) 1 Detect & Log 2 → Categorize & Prioritize → 3 Investigate & Diagnose 4 → Workaround + Known Error 5 → Raise RFC for Permanent Fix 6 → Resolve & Close 22 ITSM & ITIL Foundation Training MODULE 7 · CHANGE MANAGEMENT Change Management: Controlled Implementation DEFINITION A controlled, auditable process for evaluating, approving, and implementing any addition, modification, or removal of anything that could affect IT services — minimizing risk while enabling beneficial change. Three Types of Change Standard Pre-approved, low-risk, well-understood & repeatable (e.g. password reset script deployment) Normal Requires assessment & authorization via CAB before implementation Emergency Must be implemented ASAP to resolve a major incident or security threat — expedited approval 23 ITSM & ITIL Foundation Training MODULE 7 · CHANGE MANAGEMENT Change Management Process Flow & the CAB Every Normal change follows this path from request to closure 1 Raise RFC (Request) 2 → Log & Review 3 → Assess Risk & Impact 4 → CAB Approval 5 → Schedule & Implement → 6 Review (PIR) 7 → Close CAB = Change Advisory Board — a cross-functional group (IT, business, security, ops) that reviews and approves Normal changes, balancing risk against business benefit before authorization. 24 ITSM & ITIL Foundation Training MODULE 7 · CHANGE MANAGEMENT Risk Assessment & Change Best Practices The 7 R's of Change Management — questions the CAB must answer before approving Who RAISED the change? What is the REASON? Best Practices for Low-Risk Changes What RETURN is required? What RISKS are involved? Always define a tested backout / rollback plan before implementation Schedule within approved change windows; avoid freeze periods (peak business dates) Use a Risk & Impact matrix (Likelihood ×Impact) to classify every RFC objectively Maintain full traceability: link every Change to its originating Incident/Problem/Request What RESOURCES are required? Who is RESPONSIBLE? What is the RELATIONSHIP between this and other changes? ITSM & ITIL Foundation Training 25 MODULE 8 · RELEASE & DEPLOYMENT Release & Deployment Management Builds, tests, and delivers the capability to provide the services specified by Service Design into live use — turning an approved Change into a working reality. Release Types Major Significant new functionality, often a version upgrade Minor Small enhancements & fixes bundled together Emergency Urgent fix, usually tied to a critical incident Deployment Approaches & Environments Big Bang — deploy to all users simultaneously Phased — deploy incrementally to groups over time (rings/waves) Dev → Test/QA → Relationship to Change Management: a Change is the authorization to act; a Release is the actual packaged set of changes deployed together. Staging → Production ITSM & ITIL Foundation Training 26 MODULE 9 · SERVICE REQUEST MANAGEMENT Service Request Management DEFINITION Manages the lifecycle of requests from users for something new — access, information, a standard change, or a resource — handled through a pre-defined, repeatable process. Not the same as an Incident: nothing is broken — the user is simply asking for something. Common Examples New laptop or software license request Password reset / account unlock Access request to a folder or system New employee onboarding setup Information request (e.g. “what's my ticket status?”) Fulfilled via a Service Request Catalog + self-service portal, each item pre approved with its own standard workflow and SLA. 27 ITSM & ITIL Foundation Training MODULE 10 · HANDS-ON LAB Simulate an Incident Workflow SCENARIO “The corporate email server is unresponsive. 200 users cannot send or receive email since 9:05 AM.” 1. Log the Incident → 2. Categorize & Prioritize Ticket / Record Fields to Complete Field Ticket ID Short Description Category / Subcategory Priority (Impact × Urgency) Assignment Group Resolution / Workaround → 3. Diagnose (Exchange svc down) → 4. Escalate to L2 Messaging Example Entry INC0045213 → 5. Apply Fix / Workaround Email server unresponsive – 200 users affected → 6. Confirm & Close Messaging > Exchange Server P1 –Critical (High Impact, High Urgency) L2 Messaging Team Restarted Exchange service; monitoring for recurrence 28 ITSM & ITIL Foundation Training MODULE 10 · HANDS-ON LAB Simulate a Change Workflow SCENARIO “A critical security patch (CVE) must be applied to the production database server within 48 hours.” 1. Raise RFC → 2. Assess Risk & Backout Plan Ticket / Record Fields to Complete Field RFC ID Change Type Risk / Impact Backout Plan Approvers → 3. CAB / ECAB Review → 4. Schedule & Implement Example Entry CHG0012876 → 5. Post-Impl. Review (PIR) → 6. Close & Document Normal (requires CAB) — escalated to Emergency due to CVE severity Medium risk — brief DB downtime (~10 min) during patch window Snapshot restore to pre-patch DB state, tested in Staging DBA Lead, Security Officer, Change Manager (CAB) Post Implementation Review Patch applied successfully; no service degradation observed 29 ITSM & ITIL Foundation Training WRAP-UP Key Takeaways 1 ITSM manages IT as a set of value-delivering services, not isolated technology 3 Incident Management restores service fast; Problem Management fixes it for good 2 ITIL 4's Guiding Principles & SVS provide the framework; the Service Lifecycle structures how services are built and run 4 Change Management controls risk; Release & Deployment delivers the change; Service Requests handle routine asks 5 Every practice feeds the next — a Problem's fix becomes a Change, which is delivered as a Release Thank you —Questions & Discussion Vaayu Infra Solutions | vaayuinfrasolutions@gmail.com add this alos and make flow proper headings subheadigs and detaied notes
+Copilot said: IT SERVICE MANAGEMENT (ITSM) & ITIL FRAMEWORK
+From Foundations to Hands-On Incident & Change Simulations
+Comprehensive Flow Notes for Learning, Assessment, Interviews, and Certification Preparation
+
+COURSE ROADMAP
+Plain Text1PART 1: FOUNDATIONS2    ↓31. What is ITSM?42. ITIL Framework Overview53. Importance of ITSM Today64. Service Lifecycle7 8    ↓9 10PART 2: CORE PRACTICES111. Incident Management122. Problem Management133. Change Management144. Release & Deployment Management155. Service Request Management16 17    ↓18 19PART 3: HANDS-ON LABS201. Incident Simulation212. Change Simulation223. Key TakeawaysShow more lines
+
+MODULE 1: FOUNDATIONS
+1. What is IT Service Management (ITSM)?
+Definition
+IT Service Management (ITSM) is the set of activities an organization performs to design, build, deliver, operate, support, and continuously improve IT services for customers and business users.
+ITSM Focus
+IT is managed as a collection of services rather than individual technologies.
+Plain Text1Traditional IT2Servers + Network + Applications3           ↓4 5ITSM Approach6Business Services7           ↓8Customer ValueShow more lines
+
+Core Principles of ITSM
+1. Service, Not Silos
+IT is organized around complete business services.
+Example:
+Plain Text1Email Service2     ↓3Server4Network5Storage6Security7Support TeamShow more lines
+Users see one service, not separate technologies.
+
+2. Value-Driven
+Every activity must create value for business users.
+Plain Text1IT Activity2      ↓3Business Benefit4      ↓5Customer SatisfactionShow more lines
+
+3. Process + People + Technology
+Successful ITSM depends on:
+Plain Text1People2   +3Processes4   +5Technology6   =7Successful Service DeliveryShow more lines
+
+Key ITSM Concepts
+1. Service
+A means of enabling value for customers without requiring them to manage costs and risks.
+Example
+Cloud Email Service
+Customer gets email functionality without managing mail servers.
+
+2. Customer vs User
+Customer
+
+Pays for service
+Defines requirements
+
+User
+
+Uses service daily
+
+Example
+Plain Text1HR Department2     ↓3Customer4 5Employees6     ↓7UsersShow more lines
+
+3. Service Provider
+Provides and supports IT services.
+Examples:
+
+Internal IT Team
+Service Provider
+Managed Service Provider (MSP)
+
+
+4. Value Co-Creation
+Value is created jointly.
+Plain Text1Service Provider2          +3Customer4          ↓5Business ValueShow more lines
+
+5. Outcomes Over Outputs
+Output
+Software delivered.
+Outcome
+Business productivity increased.
+Organizations focus on outcomes rather than technical deliverables.
+
+6. Utility and Warranty
+Utility (Fit for Purpose)
+What the service does.
+Example:
+Plain Text1Email Service2Can send/receive emailsShow more lines
+Warranty (Fit for Use)
+How well the service performs.
+Example:
+Plain Text199.9% Availability2Secure Access3Fast PerformanceShow more lines
+
+MODULE 2: ITIL FRAMEWORK
+What is ITIL?
+Definition
+ITIL (Information Technology Infrastructure Library) is the world's most widely used best-practice framework for IT Service Management.
+It provides guidance for delivering high-quality IT services.
+
+Evolution of ITIL
+ITIL V1 (1989)
+
+Over 30 books
+Operational best practices
+
+
+ITIL V2 (2001)
+Focused on:
+Plain Text1Service Support2Service DeliveryShow more lines
+
+ITIL V3 (2007/2011)
+Introduced Service Lifecycle:
+Plain Text1Strategy2Design3Transition4Operation5CSIShow more lines
+
+ITIL 4 (2019)
+Modern ITIL version.
+Introduced:
+
+Service Value System (SVS)
+7 Guiding Principles
+34 Practices
+Agile & DevOps support
+
+
+ITIL 4 Guiding Principles
+These principles guide every IT decision.
+1. Focus on Value
+Everything should provide value.
+
+2. Start Where You Are
+Use existing capabilities before creating new ones.
+
+3. Progress Iteratively with Feedback
+Implement gradually and improve continuously.
+
+4. Collaborate and Promote Visibility
+Maintain stakeholder involvement and transparency.
+
+5. Think and Work Holistically
+Consider the entire ecosystem.
+
+6. Keep It Simple and Practical
+Avoid unnecessary complexity.
+
+7. Optimize and Automate
+Automate repetitive processes whenever possible.
+
+ITIL 4 Service Value System (SVS)
+The Service Value System explains how all organizational components work together to create value.
+Plain Text1Guiding Principles2        ↓3Governance4        ↓5Service Value Chain6        ↓7Practices8        ↓9Continual Improvement10        ↓11Value CreationShow more lines
+
+Service Value Chain
+The operating model that converts demand into value.
+Six Activities
+Plain Text1PLAN2  ↓3IMPROVE4  ↓5ENGAGE6  ↓7DESIGN & TRANSITION8  ↓9OBTAIN / BUILD10  ↓11DELIVER & SUPPORTShow more lines
+Output:
+Plain Text1Demand2   ↓3ValueShow more lines
+
+MODULE 3: WHY ITSM MATTERS
+Importance of ITSM in Modern Enterprises
+1. Digital Dependency
+Business operations rely heavily on IT systems.
+Plain Text1IT Downtime2      ↓3Business Downtime4      ↓5Revenue LossShow more lines
+
+2. Better Customer Experience
+Reliable services improve customer satisfaction.
+
+3. Risk and Compliance
+Controlled processes support:
+
+ISO 27001
+HIPAA
+SOX
+GDPR
+
+
+4. Cost Optimization
+Reduces:
+
+Duplicate effort
+Downtime costs
+Manual work
+
+
+Measurable Benefits
+Faster Incident Resolution
+Reduced MTTR (Mean Time to Restore)
+Reduced Repeat Issues
+Problem Management removes recurring causes.
+Better Service Quality
+Improved availability and reliability.
+Improved Productivity
+Less downtime means higher efficiency.
+Higher Customer Satisfaction
+Better service delivery and response.
+
+MODULE 4: IT SERVICE LIFECYCLE
+The classic ITIL service lifecycle includes five stages.
+Plain Text1Service Strategy2       ↓3Service Design4       ↓5Service Transition6       ↓7Service Operation8       ↓9Continual Service ImprovementShow more lines
+
+Stage 1: Service Strategy
+Purpose
+Determines:
+
+What services to offer
+Who the customers are
+How value will be created
+
+
+Key Processes
+Strategy Management
+Defines long-term direction.
+Service Portfolio Management
+Manages all services.
+Financial Management
+Controls service budgets.
+Demand Management
+Forecasts service demand.
+Business Relationship Management
+Builds customer relationships.
+
+Strategy Flow
+Plain Text1Business Need2        ↓3Service Strategy4        ↓5Service Portfolio6        ↓7Value CreationShow more lines
+
+Stage 2: Service Design
+Purpose
+Designs new or modified services.
+
+Key Processes
+Service Level Management
+Manages SLAs.
+Capacity Management
+Ensures sufficient resources.
+Availability Management
+Maintains uptime.
+IT Service Continuity Management
+Disaster recovery planning.
+Information Security Management
+Protects data and systems.
+Supplier Management
+Manages vendors and suppliers.
+
+Design Flow
+Plain Text1Service Requirements2          ↓3Service Design4          ↓5Capacity + Security + SLA6          ↓7Approved DesignShow more lines
+
+Stage 3: Service Transition
+Purpose
+Moves services into production safely.
+
+Key Processes
+
+Change Management
+Release Management
+Testing
+Knowledge Management
+Configuration Management
+
+
+Transition Flow
+Plain Text1Approved Design2       ↓3Build4       ↓5Test6       ↓7Deploy8       ↓9ProductionShow more lines
+
+Stage 4: Service Operation
+Purpose
+Manages day-to-day service delivery.
+
+Processes
+Event Management
+Monitors services.
+Incident Management
+Restores service.
+Problem Management
+Removes root causes.
+Request Fulfillment
+Handles user requests.
+Access Management
+Controls access rights.
+
+Functions
+
+Service Desk
+Technical Management
+IT Operations
+Application Management
+
+
+Stage 5: Continual Service Improvement (CSI)
+Purpose
+Continuously improves services and processes.
+
+Deming Cycle
+Plain Text1PLAN2 ↓3DO4 ↓5CHECK6 ↓7ACTShow more lines
+
+7-Step Improvement Process
+Plain Text11. Identify Improvement Strategy2          ↓32. Define Measurements4          ↓53. Collect Data6          ↓74. Process Data8          ↓95. Analyze Data10          ↓116. Present Information12          ↓137. Implement ImprovementsShow more lines
+
+MODULE 5: INCIDENT MANAGEMENT
+What is Incident Management?
+Definition
+An Incident is an unplanned interruption or reduction in service quality.
+
+Objective
+Restore normal service operations quickly.
+Plain Text1Issue Occurs2      ↓3Restore Service Fast4      ↓5Minimize Business ImpactShow more lines
+
+Incident Priority Matrix
+P1 Critical
+
+Major outage
+No workaround
+Multiple users affected
+
+P2 High
+
+Significant impact
+Partial workaround available
+
+P3 Medium
+
+Moderate impact
+
+P4 Low
+
+Minor issue
+
+
+Incident Process Flow
+Plain Text1Identify Incident2        ↓3Log Ticket4        ↓5Categorize6        ↓7Prioritize8        ↓9Diagnose10        ↓11Escalate (if needed)12        ↓13Resolve14        ↓15Confirm with User16        ↓17Close TicketShow more lines
+
+Incident Roles
+Service Desk Agent
+First point of contact.
+Incident Manager
+Coordinates major incidents.
+L2/L3 Support Teams
+Provide specialist support.
+
+Important KPIs
+MTTR
+Mean Time to Restore Service
+SLA Compliance
+% incidents resolved within SLA
+FCR
+First Contact Resolution
+Reopen Rate
+Incidents reopened after closure
+
+MODULE 6: PROBLEM MANAGEMENT
+What is Problem Management?
+Definition
+A Problem is the underlying cause of one or more incidents.
+
+Objective
+Prevent future incidents through root cause elimination.
+
+Incident vs Problem
+Plain Text1INCIDENT2Restore Service3 4PROBLEM5Find Root CauseShow more lines
+
+Root Cause Analysis Techniques
+1. Five Whys
+Ask "Why?" repeatedly.
+
+2. Fishbone Diagram
+Analyze causes under:
+Plain Text1People2Process3Technology4EnvironmentShow more lines
+
+3. Pareto Analysis
+80% of incidents often come from 20% of causes.
+
+4. Kepner-Tregoe
+Structured comparison to identify causes.
+
+Problem Management Flow
+Plain Text1Repeated Incidents2         ↓3Problem Identified4         ↓5Investigate Cause6         ↓7Known Error Created8         ↓9Workaround Provided10         ↓11RFC Raised12         ↓13Permanent Fix14         ↓15Problem ClosureShow more lines
+
+MODULE 7: CHANGE MANAGEMENT
+What is Change Management?
+Definition
+Controls all modifications to IT services while minimizing risk.
+
+Objectives
+Plain Text1Enable Beneficial Change2          ↓3Control Risk4          ↓5Maintain StabilityShow more lines
+
+Types of Change
+Standard Change
+Pre-approved and low risk.
+Example:
+
+Password reset automation
+
+
+Normal Change
+Requires CAB approval.
+Example:
+
+Software upgrade
+
+
+Emergency Change
+Urgent change.
+Example:
+
+Critical security patch
+
+
+Change Process Flow
+Plain Text1Raise RFC2     ↓3Review Request4     ↓5Risk Assessment6     ↓7CAB Approval8     ↓9Schedule Change10     ↓11Implement12     ↓13Post Review14     ↓15CloseShow more lines
+
+CAB (Change Advisory Board)
+Cross-functional review board.
+Members:
+
+IT Operations
+Security
+Business Representatives
+Change Manager
+
+Purpose:
+Plain Text1Review Risk2      ↓3Evaluate Impact4      ↓5Approve / Reject ChangeShow more lines
+
+The 7 R's of Change Management
+
+Who Raised the Change?
+What is the Reason?
+What Return is Expected?
+What Risks Exist?
+What Resources Are Required?
+Who is Responsible?
+What Relationships Exist?
+
+
+Change Best Practices
+
+Define rollback plan
+Test before deployment
+Schedule maintenance windows
+Use risk-impact matrix
+Maintain documentation
+
+
+MODULE 8: RELEASE & DEPLOYMENT MANAGEMENT
+Purpose
+Build, test, and deploy approved changes.
+
+Relationship
+Plain Text1Problem2    ↓3Change Request4    ↓5Approved Change6    ↓7Release8    ↓9DeploymentShow more lines
+
+Release Types
+Major Release
+Large functionality changes.
+Minor Release
+Enhancements and fixes.
+Emergency Release
+Urgent production fix.
+
+Deployment Approaches
+Big Bang
+Deploy to everyone at once.
+Phased Deployment
+Deploy to user groups gradually.
+
+Deployment Environment Flow
+Plain Text1Development2      ↓3Testing / QA4      ↓5Staging6      ↓7ProductionShow more lines
+
+MODULE 9: SERVICE REQUEST MANAGEMENT
+Definition
+Handles user requests for services, information, access, or resources.
+
+Key Difference
+Plain Text1Incident2Something Broken3 4Service Request5Need Something NewShow more lines
+
+Examples
+
+Password reset
+Laptop request
+Software installation
+Folder access
+Employee onboarding
+
+
+Service Request Flow
+Plain Text1User Request2      ↓3Log Request4      ↓5Approval (if needed)6      ↓7Fulfillment8      ↓9User Confirmation10      ↓11ClosureShow more lines
+
+Service Catalog
+Central menu of service offerings.
+Plain Text1Service Catalog2      ↓3Laptop Request4Software Request5Access Request6Email Service7Cloud ServiceShow more lines
+
+MODULE 10: HANDS-ON LAB
+Incident Simulation
+Scenario
+Corporate email server unavailable.
+200 users unable to send or receive emails.
+
+Workflow
+Plain Text1Issue Identified2        ↓3Create Incident Ticket4        ↓5Categorize (Messaging)6        ↓7Priority = P1 Critical8        ↓9Assign to L2 Messaging Team10        ↓11Diagnose Exchange Service12        ↓13Restart Service14        ↓15Validate Service16        ↓17Close TicketShow more lines
+Example Ticket
+Plain Text1Ticket ID: INC00452132Description: Email Server Unresponsive3Category: Messaging > Exchange4Priority: P1 Critical5Assignment: L2 Messaging6Resolution: Restarted Exchange ServiceShow more lines
+
+Change Simulation
+Scenario
+Critical database security patch must be applied within 48 hours.
+
+Workflow
+Plain Text1Raise RFC2      ↓3Assess Risk4      ↓5Prepare Backout Plan6      ↓7CAB Review8      ↓9Schedule Patch10      ↓11Implement Patch12      ↓13Conduct PIR14      ↓15Close ChangeShow more lines
+Example Change Record
+Plain Text1RFC ID: CHG00128762 3Change Type:4Normal Change5 6Risk:7Medium8 9Backout Plan:10Restore Database Snapshot11 12Approvers:13DBA Lead14Security Officer15Change ManagerShow more lines
+
+COMPLETE ITSM PROCESS FLOW
+Plain Text1Business Need2      ↓3ITSM Framework (ITIL)4      ↓5Service Strategy6      ↓7Service Design8      ↓9Service Transition10      ↓11Service Operation12      ↓13Incident Occurs14      ↓15Incident Management16      ↓17Problem Management18      ↓19Root Cause Found20      ↓21Change Request Raised22      ↓23Change Approved24      ↓25Release & Deployment26      ↓27Service Restored & Improved28      ↓29Continual Service Improvement30      ↓31Better Business ValueShow more lines
+FINAL EXAM / INTERVIEW QUICK REVISION
+Plain Text1ITSM = Managing IT Services2 3ITIL = Best Practice Framework4 5Service = Deliver Value6 7Utility = Fit for Purpose8 9Warranty = Fit for Use10 11Incident Management = Restore Service Fast12 13Problem Management = Remove Root Cause14 15Change Management = Control Risk16 17Release Management = Deliver Approved Changes18 19Service Request = Fulfill User Requests20 21SLA = Agreement with Customer22 23CAB = Approves Changes24 25CSI = Continuous Improvement26 27SVS = Service Value System28 29MTTR = Mean Time to Restore30 31FCR = First Contact ResolutionShow more lines
+These notes combine your course content, ITIL lifecycle, ITIL 4 concepts, guiding principles, SVS, incident/problem/change management, release management, service requests, and hands-on lab simulations into a complete end-to-end flow suitable for study and reference.
+Provide your feedback on BizChat
+
+
+
+IT Service Management Processes
+Progress
+
+0%
+Completion info
+
+Gained XP
+0 / 50
+Activities
+0 / 1
+Course info
+
+Practice lab
+0
+Video
+0
+Quiz
+0
+Others
+1
+Table of contents
+Description
+This course is part of learningpath : Automation and Analytics - v3
+
+Timeline view
+Introduction to ITSM            
+
+What is IT Service Management
+ITIL framework overview
+Importance of ITSM in modern enterprises
+Service lifecycle (Service Strategy, Design, Transition, Operation, Continual Improvement)
+Core ITSM Processes           
+
+Incident Management: restoring service quickly
+Problem Management: root cause analysis & prevention
+Change Management: controlled change implementation
+Release & Deployment Management
+Service Request Management
+Hands-on: Simulate incident and change workflows
+Service Catalog & SLA Management        
+
+Defining service offerings
+SLA, OLA, and underpinning contracts
+Service portfolio management
+Hands-on: Create a sample service catalogue
+Workflow Automation         
+
+Ticket lifecycle management
+Escalation rules and approvals
+Automation with ITSM tools (ServiceNow, Jira Service Management, BMC Remedy)
+Hands-on: Configure automated workflows
+ITSM Tools & Platforms       
+
+Overview of leading ITSM platforms
+Integration with monitoring and observability tools
+Reporting and dashboards
+Hands-on: Explore ServiceNow developer instance
+Advanced Topics      
+
+ITSM in cloud-native environments
+ITSM + AIOps integration
+Future trends: AI-driven service desk, self-healing systems
+Hands-on: Simulate AI-assisted ticket resolution
+Total: days (theory + labs)
+ 
+
+
+Hands On
+
+BU Driven Handson
